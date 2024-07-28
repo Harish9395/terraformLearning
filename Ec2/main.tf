@@ -1,9 +1,11 @@
 terraform {
   required_providers {
-    aws = {
-        source  = "hashicorp/aws"
-        version = "~> 5.0"
-    }
+      aws = {
+          source  = "hashicorp/aws"
+          version = "~> 5.0"
+      }
+  }
+}
 
 provider "aws" {
     access_key = var.AWS_ACCESS_KEY_ID
